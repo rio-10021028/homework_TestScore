@@ -3,6 +3,12 @@ using namespace std;
 
 void arraySetter(int* parr, int size)
 {
+	// nullチェック
+	if (parr == nullptr)
+	{
+		return;
+	}
+
 	for (int i = 0; i < size; i++)
 	{
 		int score;
@@ -15,6 +21,12 @@ void arraySetter(int* parr, int size)
 
 int totalCalcurator(int* parr, int size)
 {
+	// nullチェック
+	if (parr == nullptr)
+	{
+		return 0;
+	}
+
 	int total = 0;
 	for (int i = 0; i < size; i++)
 	{
@@ -26,6 +38,12 @@ int totalCalcurator(int* parr, int size)
 
 double averageCalcurator(int* parr, int size)
 {
+	// nullチェック
+	if (parr == nullptr)
+	{
+		return 0;
+	}
+
 	int total = 0;
 	for (int i = 0; i < size; i++)
 	{
@@ -40,7 +58,7 @@ int main()
 	int num;
 	int total;
 	double average;
-	int* score;
+	int* score = nullptr;
 
 	cout << "何人分入力しますか > " << flush;
 	cin >> num;
