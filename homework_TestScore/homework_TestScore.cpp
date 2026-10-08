@@ -44,7 +44,7 @@ double averageCalcurator(int* parr, int size)
 		return 0;
 	}
 
-	int total = 0;
+	double total = 0;
 	for (int i = 0; i < size; i++)
 	{
 		total += *(parr + i);
